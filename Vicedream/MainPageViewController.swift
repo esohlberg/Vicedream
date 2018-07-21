@@ -11,8 +11,7 @@ import UIKit
 
 class MainPageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
-    
-    var historyManager: HistoryManager = HistoryManager()
+    @IBOutlet weak var balanceField: UITextField!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return historyManager.historiesCount
@@ -28,8 +27,6 @@ class MainPageViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +34,10 @@ class MainPageViewController: UIViewController, UITableViewDataSource, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        balanceField.text = "\(pointBalance)"
+        tableView.reloadData()
+    }
     /*
     // MARK: - Navigation
 

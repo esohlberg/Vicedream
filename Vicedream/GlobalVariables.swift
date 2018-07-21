@@ -9,3 +9,5 @@
 import Foundation
 
 var viceManager = vicedreamsManager()
+var historyManager = HistoryManager()
+var pointBalance:Double = 0

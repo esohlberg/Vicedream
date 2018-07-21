@@ -21,6 +21,8 @@
 		427DABEA21027289005384E5 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427DABE921027289005384E5 /* MainPageViewController.swift */; };
 		427DABEC21028ABA005384E5 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427DABEB21028ABA005384E5 /* HistoryManager.swift */; };
 		42DBAC65210392420046C3F8 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DBAC64210392420046C3F8 /* GlobalVariables.swift */; };
+		42DBAC69210396510046C3F8 /* SpendViceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DBAC68210396510046C3F8 /* SpendViceTableViewController.swift */; };
+		42DBAC6B21039B140046C3F8 /* FinalSpendViceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DBAC6A21039B140046C3F8 /* FinalSpendViceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		427DABE921027289005384E5 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		427DABEB21028ABA005384E5 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
 		42DBAC64210392420046C3F8 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		42DBAC68210396510046C3F8 /* SpendViceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendViceTableViewController.swift; sourceTree = "<group>"; };
+		42DBAC6A21039B140046C3F8 /* FinalSpendViceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalSpendViceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +120,8 @@
 				427DABE921027289005384E5 /* MainPageViewController.swift */,
 				4279B48C21001A0F00929889 /* vicedreamsManager.swift */,
 				427DABEB21028ABA005384E5 /* HistoryManager.swift */,
-				4279B49021002A6B00929889 /* AddViceViewController.swift */,
-				4279B48A20FFEEC600929889 /* ViceTableViewController.swift */,
+				42DBAC672103962E0046C3F8 /* SpendVice */,
+				42DBAC662103960D0046C3F8 /* ViceListMaintenance */,
 				4279B46120FFB6DA00929889 /* Assets.xcassets */,
 				4279B46320FFB6DA00929889 /* LaunchScreen.storyboard */,
 				4279B46620FFB6DA00929889 /* Info.plist */,
@@ -144,6 +148,24 @@
 				4279B47C20FFB6DA00929889 /* Info.plist */,
 			);
 			path = VicedreamUITests;
+			sourceTree = "<group>";
+		};
+		42DBAC662103960D0046C3F8 /* ViceListMaintenance */ = {
+			isa = PBXGroup;
+			children = (
+				4279B49021002A6B00929889 /* AddViceViewController.swift */,
+				4279B48A20FFEEC600929889 /* ViceTableViewController.swift */,
+			);
+			path = ViceListMaintenance;
+			sourceTree = "<group>";
+		};
+		42DBAC672103962E0046C3F8 /* SpendVice */ = {
+			isa = PBXGroup;
+			children = (
+				42DBAC68210396510046C3F8 /* SpendViceTableViewController.swift */,
+				42DBAC6A21039B140046C3F8 /* FinalSpendViceViewController.swift */,
+			);
+			path = SpendVice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,12 +302,14 @@
 				427DABEA21027289005384E5 /* MainPageViewController.swift in Sources */,
 				4279B48B20FFEEC600929889 /* ViceTableViewController.swift in Sources */,
 				4279B48D21001A0F00929889 /* vicedreamsManager.swift in Sources */,
+				42DBAC6B21039B140046C3F8 /* FinalSpendViceViewController.swift in Sources */,
 				42DBAC65210392420046C3F8 /* GlobalVariables.swift in Sources */,
 				427DABE421026AFC005384E5 /* History.swift in Sources */,
 				4279B45B20FFB6D800929889 /* AppDelegate.swift in Sources */,
 				427DABEC21028ABA005384E5 /* HistoryManager.swift in Sources */,
 				4279B48920FFECC900929889 /* Vicedream.swift in Sources */,
 				4279B49121002A6B00929889 /* AddViceViewController.swift in Sources */,
+				42DBAC69210396510046C3F8 /* SpendViceTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M6PYKJF6AY;
 				INFOPLIST_FILE = Vicedream/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M6PYKJF6AY;
 				INFOPLIST_FILE = Vicedream/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
