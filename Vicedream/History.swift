@@ -13,8 +13,9 @@ struct History {
     var vicedream: Vicedream
     var time: String
     var hours: Double!
+    var vicenotdream: Bool
     
-    init(vicedream: Vicedream) {
+    init(vicedream: Vicedream, vicenotdream: Bool) {
         self.vicedream = vicedream
         let date = Date()
         let calender = Calendar.current
@@ -25,5 +26,6 @@ struct History {
         let hour = components.hour
         let minute = components.minute
         self.time = String(hour!)  + ":" + String(minute!) + " " + String(month!) + "/" + String(day!) + "/" + String(year!)
+        self.vicenotdream = vicenotdream
     }
 }

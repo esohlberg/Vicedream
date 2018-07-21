@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4279B45B20FFB6D800929889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279B45A20FFB6D800929889 /* AppDelegate.swift */; };
-		4279B45D20FFB6D800929889 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279B45C20FFB6D800929889 /* ViewController.swift */; };
 		4279B46020FFB6D800929889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4279B45E20FFB6D800929889 /* Main.storyboard */; };
 		4279B46220FFB6DA00929889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4279B46120FFB6DA00929889 /* Assets.xcassets */; };
 		4279B46520FFB6DA00929889 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4279B46320FFB6DA00929889 /* LaunchScreen.storyboard */; };
@@ -21,6 +20,7 @@
 		427DABE421026AFC005384E5 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427DABE321026AFC005384E5 /* History.swift */; };
 		427DABEA21027289005384E5 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427DABE921027289005384E5 /* MainPageViewController.swift */; };
 		427DABEC21028ABA005384E5 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427DABEB21028ABA005384E5 /* HistoryManager.swift */; };
+		42DBAC65210392420046C3F8 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DBAC64210392420046C3F8 /* GlobalVariables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 /* Begin PBXFileReference section */
 		4279B45720FFB6D800929889 /* Vicedream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vicedream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4279B45A20FFB6D800929889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4279B45C20FFB6D800929889 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4279B45F20FFB6D800929889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4279B46120FFB6DA00929889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4279B46420FFB6DA00929889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		427DABE321026AFC005384E5 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		427DABE921027289005384E5 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		427DABEB21028ABA005384E5 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
+		42DBAC64210392420046C3F8 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				4279B45A20FFB6D800929889 /* AppDelegate.swift */,
-				4279B45C20FFB6D800929889 /* ViewController.swift */,
 				4279B45E20FFB6D800929889 /* Main.storyboard */,
 				427DABE921027289005384E5 /* MainPageViewController.swift */,
 				4279B48C21001A0F00929889 /* vicedreamsManager.swift */,
@@ -124,6 +123,7 @@
 				4279B46620FFB6DA00929889 /* Info.plist */,
 				427DABE321026AFC005384E5 /* History.swift */,
 				4279B48820FFECC900929889 /* Vicedream.swift */,
+				42DBAC64210392420046C3F8 /* GlobalVariables.swift */,
 			);
 			path = Vicedream;
 			sourceTree = "<group>";
@@ -280,8 +280,8 @@
 				427DABEA21027289005384E5 /* MainPageViewController.swift in Sources */,
 				4279B48B20FFEEC600929889 /* ViceTableViewController.swift in Sources */,
 				4279B48D21001A0F00929889 /* vicedreamsManager.swift in Sources */,
+				42DBAC65210392420046C3F8 /* GlobalVariables.swift in Sources */,
 				427DABE421026AFC005384E5 /* History.swift in Sources */,
-				4279B45D20FFB6D800929889 /* ViewController.swift in Sources */,
 				4279B45B20FFB6D800929889 /* AppDelegate.swift in Sources */,
 				427DABEC21028ABA005384E5 /* HistoryManager.swift in Sources */,
 				4279B48920FFECC900929889 /* Vicedream.swift in Sources */,

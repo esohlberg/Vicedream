@@ -20,7 +20,6 @@ extension ViceTableViewController: AddViceViewControllerDelegate {
 }
 
 class ViceTableViewController: UITableViewController {
-    var viceManager: vicedreamsManager = vicedreamsManager()
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let selectedIndexPath = tableView.indexPathForSelectedRow,

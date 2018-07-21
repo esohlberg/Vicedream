@@ -11,6 +11,7 @@ import Foundation
 class HistoryManager {
     private lazy var histories: [History] = []
     var historiesCount: Int {return histories.count}
+    
     func getHistory(at index: Int) -> History {
         return histories[index]
     }
