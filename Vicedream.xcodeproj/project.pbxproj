@@ -20,6 +20,8 @@
 		427DABE421026AFC005384E5 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427DABE321026AFC005384E5 /* History.swift */; };
 		427DABEA21027289005384E5 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427DABE921027289005384E5 /* MainPageViewController.swift */; };
 		427DABEC21028ABA005384E5 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427DABEB21028ABA005384E5 /* HistoryManager.swift */; };
+		42C7FA0A2107F099004FA3C4 /* red button.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C7FA092107F099004FA3C4 /* red button.png */; };
+		42C7FA0C2107F1A6004FA3C4 /* red button (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 42C7FA0B2107F1A6004FA3C4 /* red button (1).png */; };
 		42DBAC65210392420046C3F8 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DBAC64210392420046C3F8 /* GlobalVariables.swift */; };
 		42DBAC69210396510046C3F8 /* SpendViceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DBAC68210396510046C3F8 /* SpendViceTableViewController.swift */; };
 		42DBAC6B21039B140046C3F8 /* FinalSpendViceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DBAC6A21039B140046C3F8 /* FinalSpendViceViewController.swift */; };
@@ -62,6 +64,8 @@
 		427DABE321026AFC005384E5 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		427DABE921027289005384E5 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		427DABEB21028ABA005384E5 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
+		42C7FA092107F099004FA3C4 /* red button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red button.png"; path = "../../Box Sync/Downloads/red button.png"; sourceTree = "<group>"; };
+		42C7FA0B2107F1A6004FA3C4 /* red button (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red button (1).png"; path = "../../Box Sync/Downloads/red button (1).png"; sourceTree = "<group>"; };
 		42DBAC64210392420046C3F8 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		42DBAC68210396510046C3F8 /* SpendViceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendViceTableViewController.swift; sourceTree = "<group>"; };
 		42DBAC6A21039B140046C3F8 /* FinalSpendViceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalSpendViceViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 		4279B45920FFB6D800929889 /* Vicedream */ = {
 			isa = PBXGroup;
 			children = (
+				42C7FA0B2107F1A6004FA3C4 /* red button (1).png */,
+				42C7FA092107F099004FA3C4 /* red button.png */,
 				4279B45A20FFB6D800929889 /* AppDelegate.swift */,
 				4279B45E20FFB6D800929889 /* Main.storyboard */,
 				427DABE921027289005384E5 /* MainPageViewController.swift */,
@@ -272,9 +278,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C7FA0A2107F099004FA3C4 /* red button.png in Resources */,
 				4279B46520FFB6DA00929889 /* LaunchScreen.storyboard in Resources */,
 				4279B46220FFB6DA00929889 /* Assets.xcassets in Resources */,
 				4279B46020FFB6D800929889 /* Main.storyboard in Resources */,
+				42C7FA0C2107F1A6004FA3C4 /* red button (1).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/emilsohlberg/Desktop/EarnedIt/Vicedream.xcodeproj">
+      location = "group:../../Box Sync/Downloads/red button.png">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
