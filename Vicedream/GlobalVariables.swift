@@ -8,6 +8,12 @@
 
 import Foundation
 
+extension String {
+    var doubleValue: Double? {
+        return Double(self)
+    }
+}
+
 var viceManager = vicedreamsManager()
 var historyManager = HistoryManager()
 var pointBalance:Double = 0

@@ -22,6 +22,7 @@ class AddViceViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var rateTextField: UITextField!
     @IBOutlet weak var hourlyInstant: UISegmentedControl!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,53 @@ class AddViceViewController: UIViewController {
             vice.hourly ? (hourlyInstant.selectedSegmentIndex = 0) : (hourlyInstant.selectedSegmentIndex = 1)
             navigationItem.title = "Edit Vice"
         }
+        allGood()
     }
+    
+    func numGood() -> Bool{
+        if rateTextField.text!.isEmpty{
+            return false
+        }
+        else {
+            let texthold = rateTextField.text
+            if let valx = texthold!.doubleValue {
+                if (valx > 0) {
+                    rateTextField.text = "-" + rateTextField.text!
+                }
+                return true
+            }
+            else {
+                return false
+            }
+        }
+    }
+    
+    func allGood() {
+        _ = numGood()
+        if (nameGood() && numGood()){
+            saveButton.isEnabled = true
+        }
+        else {
+            saveButton.isEnabled = false
+        }
+    }
+    
+    func nameGood() -> Bool {
+        if nameTextField.text!.isEmpty {
+            return false
+        }
+        else {
+            return true
+        }
+    }
+    @IBAction func rateFull(_ sender: Any) {
+        allGood()
+    }
+    
+    @IBAction func checkFull(_ sender: Any) {
+        allGood()
+    }
+    
     
     // Save and Cancel buttons
     @IBAction func cancelEnd(_ sender: Any) {

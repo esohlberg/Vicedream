@@ -64,7 +64,7 @@ class ViceTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "vicedreamCell", for: indexPath)
         let vice = viceManager.getVicedream(at: indexPath.row)
         cell.textLabel?.text = vice.name
-        cell.detailTextLabel?.text = "-" + String(vice.rate) + (vice.hourly ? "/hour" : "")
+        cell.detailTextLabel?.text = String(vice.rate) + (vice.hourly ? "/hour" : "")
         return cell
     }
     

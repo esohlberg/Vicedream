@@ -200,6 +200,9 @@
                                                 </constraints>
                                                 <attributedString key="attributedText"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <action selector="hoursGood:" destination="Fp2-Ks-Jpf" eventType="editingChanged" id="NaW-uQ-Nhw"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -236,6 +239,7 @@
                         <outlet property="hoursText" destination="orx-1s-dUN" id="tek-fR-hTt"/>
                         <outlet property="nameLabel" destination="BEu-sF-aUJ" id="Hy0-zA-jMR"/>
                         <outlet property="rateLabel" destination="R1I-uO-Zpi" id="l0y-Uo-E2n"/>
+                        <outlet property="spendButton" destination="QoE-aa-M4K" id="Fld-np-Ygb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUz-TC-gUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -399,6 +403,9 @@
                                                 </constraints>
                                                 <attributedString key="attributedText"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="checkFull:" destination="iad-21-RAA" eventType="editingChanged" id="ldO-i3-yFn"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -418,6 +425,9 @@
                                                 </constraints>
                                                 <attributedString key="attributedText"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <action selector="rateFull:" destination="iad-21-RAA" eventType="editingChanged" id="ghW-d2-GPk"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -465,6 +475,7 @@
                         <outlet property="hourlyInstant" destination="03C-yE-40u" id="bUW-jd-y3m"/>
                         <outlet property="nameTextField" destination="GTJ-Zt-4hs" id="gGU-z9-uip"/>
                         <outlet property="rateTextField" destination="Qe9-rP-590" id="RIX-ig-V3T"/>
+                        <outlet property="saveButton" destination="1ve-TW-JYP" id="e9k-CO-b6x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdq-6k-YNy" userLabel="First Responder" sceneMemberID="firstResponder"/>
