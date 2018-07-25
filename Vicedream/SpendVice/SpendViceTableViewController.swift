@@ -47,7 +47,6 @@ class SpendViceTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return viceManager.vicedreamsCount
     }
 
@@ -55,6 +54,7 @@ class SpendViceTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "vicedreamCell", for: indexPath)
         let vice = viceManager.getVicedream(at: indexPath.row)
         cell.textLabel?.text = vice.name
+        cell.detailTextLabel?.text = "-" + String(vice.rate) + (vice.hourly ? "/hour" : "")
         return cell
     }
     

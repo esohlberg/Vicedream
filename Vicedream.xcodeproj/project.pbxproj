@@ -159,8 +159,8 @@
 		42DBAC662103960D0046C3F8 /* ViceListMaintenance */ = {
 			isa = PBXGroup;
 			children = (
-				4279B49021002A6B00929889 /* AddViceViewController.swift */,
 				4279B48A20FFEEC600929889 /* ViceTableViewController.swift */,
+				4279B49021002A6B00929889 /* AddViceViewController.swift */,
 			);
 			path = ViceListMaintenance;
 			sourceTree = "<group>";
