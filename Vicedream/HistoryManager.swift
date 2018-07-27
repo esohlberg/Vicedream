@@ -16,7 +16,7 @@ class HistoryManager {
         return histories[index]
     }
     func addHistory(_ history: History) {
-        histories.append(history)
+        histories.insert(history, at:0 )
     }
     func updateHistory(at index: Int, with history: History) {
         histories[index] = history
