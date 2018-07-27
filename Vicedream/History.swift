@@ -25,7 +25,7 @@ struct History {
         let day = components.day
         let hour = components.hour
         let minute = components.minute
-        self.time = String(hour!)  + ":" + String(minute!) + " " + String(month!) + "/" + String(day!) + "/" + String(year!)
+        self.time = String(hour!)  + ":" + String(format: "%02d", (minute!)) + " " + String(month!) + "/" + String(day!) + "/" + String(year!)
         self.vicenotdream = vicenotdream
     }
 }
