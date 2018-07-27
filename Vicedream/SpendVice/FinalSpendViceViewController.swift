@@ -65,8 +65,8 @@ class FinalSpendViceViewController: UIViewController {
         let newHistory = History(vicedream: vice!, vicenotdream: true)
         delegate?.saveHistory(newHistory)
         (vice!.hourly == false) ?
-            (pointBalance -= vice!.rate) :
-            (pointBalance -= vice!.rate * Double(hoursText.text!)!)
+            (pointBalance += vice!.rate) :
+            (pointBalance += vice!.rate * Double(hoursText.text!)!)
         dismissOut()
     }
     

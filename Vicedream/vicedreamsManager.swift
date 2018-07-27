@@ -19,9 +19,9 @@ class vicedreamsManager {
     }
     private func sampleVicedreams() -> [Vicedream] {
         let vicedreams = [
-            Vicedream(name: "Work out", rate: 1.2, hourly: true),
-            Vicedream(name: "Wake up before 8:30", rate: 0.4, hourly: false),
-            Vicedream(name: "Eat a full meal", rate: 0.2, hourly: false)
+            Vicedream(name: "Work out", rate: -1.2, hourly: true),
+            Vicedream(name: "Wake up before 8:30", rate: -0.4, hourly: false),
+            Vicedream(name: "Eat a full meal", rate: -0.2, hourly: false)
         ]
         return vicedreams
     }

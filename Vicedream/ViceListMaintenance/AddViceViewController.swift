@@ -42,6 +42,9 @@ class AddViceViewController: UIViewController {
         }
         else {
             let texthold = rateTextField.text
+            if texthold == "-" {
+                rateTextField.text = ""
+            }
             if let valx = texthold!.doubleValue {
                 if (valx > 0) {
                     rateTextField.text = "-" + rateTextField.text!
