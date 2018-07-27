@@ -34,6 +34,7 @@ class FinalSpendViceViewController: UIViewController {
                 
         }
         numGood()
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target:self.view, action: #selector(UIView.endEditing(_:))))
     }
     
     func numGood(){
@@ -60,7 +61,6 @@ class FinalSpendViceViewController: UIViewController {
         numGood()
     }
     
-
     @IBAction func spendVice(_ sender: Any) {
         let newHistory = History(vicedream: vice!, vicenotdream: true)
         delegate?.saveHistory(newHistory)
@@ -82,16 +82,4 @@ class FinalSpendViceViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
