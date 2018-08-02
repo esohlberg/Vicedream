@@ -21,7 +21,7 @@ class MainPageViewController: UIViewController, UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath)
         let history = historyManager.getHistory(at: indexPath.row)
         cell.textLabel?.text = history.vicedream.name
-        cell.detailTextLabel?.text = history.time
+        cell.detailTextLabel?.text = history.points + "   " + history.time
         return cell
     }
     

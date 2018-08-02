@@ -12,10 +12,11 @@ import UIKit
 struct History {
     var vicedream: Vicedream
     var time: String
+    var points: String
     var hours: Double!
     var vicenotdream: Bool
     
-    init(vicedream: Vicedream, vicenotdream: Bool) {
+    init(vicedream: Vicedream, vicenotdream: Bool, points: Double) {
         self.vicedream = vicedream
         let date = Date()
         let calender = Calendar.current
@@ -27,5 +28,6 @@ struct History {
         let minute = components.minute
         self.time = String(hour!)  + ":" + String(format: "%02d", (minute!)) + " " + String(month!) + "/" + String(day!) + "/" + String(year!)
         self.vicenotdream = vicenotdream
+        self.points = String(points)
     }
 }
