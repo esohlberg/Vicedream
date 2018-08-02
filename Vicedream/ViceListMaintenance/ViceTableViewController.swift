@@ -21,6 +21,10 @@ extension ViceTableViewController: AddViceViewControllerDelegate {
 
 class ViceTableViewController: UITableViewController {
 
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let selectedIndexPath = tableView.indexPathForSelectedRow,
             let addviceViewController = segue.destination
