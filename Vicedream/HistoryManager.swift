@@ -8,21 +8,7 @@
 
 import Foundation
 
-private let appSupportDirectory: URL = {
-    let url = FileManager().urls(
-        for: .applicationSupportDirectory,
-        in: .userDomainMask).first!
-    if !FileManager().fileExists(atPath: url.path) {
-        do {
-            try FileManager().createDirectory(at: url, withIntermediateDirectories: false)
-        } catch {
-            print("\(error.localizedDescription)")
-        }
-    }
-    return url
-} ()
 
-private let historyFile = appSupportDirectory.appendingPathComponent("Histories")
 
 class HistoryManager {
     private lazy var histories: [History] = self.loadHistory()
@@ -39,6 +25,10 @@ class HistoryManager {
     }
     func updateHistory(at index: Int, with history: History) {
         histories[index] = history
+        storeHistories()
+    }
+    func removeHistory(at index: Int) {
+        histories.remove(at: index)
         storeHistories()
     }
     func storeHistories() {

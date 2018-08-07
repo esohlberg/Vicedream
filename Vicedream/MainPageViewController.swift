@@ -38,6 +38,13 @@ class MainPageViewController: UIViewController, UITableViewDataSource, UITableVi
         balanceField.text = "\(pointBalance)"
         tableView.reloadData()
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            historyManager.removeHistory(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
     /*
     // MARK: - Navigation
 

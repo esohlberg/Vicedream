@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct Vicedream {
+struct Vicedream: Codable {
     var name: String
     var rate: Double
     var hourly: Bool
@@ -21,4 +21,8 @@ struct Vicedream {
     }
 }
 
-
+internal struct vicedreamKey {
+    static let name = "name"
+    static let rate = "rate"
+    static let hourly = "hourly"
+}

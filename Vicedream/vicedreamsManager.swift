@@ -15,7 +15,7 @@ class vicedreamsManager {
         return vicedreams[index]
     }
     private func loadVicedreams() -> [Vicedream] {
-        return sampleVicedreams()
+        return retrieveVicedream() ?? sampleVicedreams()
     }
     private func sampleVicedreams() -> [Vicedream] {
         let vicedreams = [
@@ -27,11 +27,35 @@ class vicedreamsManager {
     }
     func addVicedream(_ vicedream: Vicedream) {
         vicedreams.append(vicedream)
+        storeVicedream()
     }
     func updateVicedream(at index: Int, with vicedream: Vicedream) {
         vicedreams[index] = vicedream
     }
     func removeVicedream(at index: Int) {
         vicedreams.remove(at: index)
+        storeVicedream()
+    }
+    func storeVicedream() {
+        do {
+            let encoder = PropertyListEncoder()
+            let data = try encoder.encode(vicedreams)
+            let success = NSKeyedArchiver.archiveRootObject(data, toFile: viceFile.path)
+            print(success ? "Successful save" : "Save Failed")
+        } catch {
+            print("Save Failed!")
+        }
+    }
+    func retrieveVicedream() -> [Vicedream]? {
+        guard let data = NSKeyedUnarchiver.unarchiveObject(withFile: viceFile.path)
+            as? Data else { return nil }
+        do {
+            let decoder = PropertyListDecoder()
+            let vicedreams = try decoder.decode([Vicedream].self, from: data)
+            return vicedreams
+        } catch {
+            print("Retrieve Failed")
+            return nil
+        }
     }
 }

@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -55,14 +54,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Vices" id="FXZ-a9-H8v">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="gl0-3W-GHU">
-                                <connections>
-                                    <segue destination="xqx-id-Je4" kind="presentation" id="GvQ-S8-fBK"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Edit" id="3Rj-po-sWx"/>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gl0-3W-GHU">
+                            <connections>
+                                <segue destination="xqx-id-Je4" kind="presentation" id="GvQ-S8-fBK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzV-Be-9uj" userLabel="First Responder" sceneMemberID="firstResponder"/>
