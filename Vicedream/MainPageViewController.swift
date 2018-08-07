@@ -20,7 +20,7 @@ class MainPageViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath)
         let history = historyManager.getHistory(at: indexPath.row)
-        cell.textLabel?.text = history.vicedream.name
+        cell.textLabel?.text = history.vicedreamname
         cell.detailTextLabel?.text = history.points + "   " + history.time
         return cell
     }

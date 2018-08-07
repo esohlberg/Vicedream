@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 extension String {
     var doubleValue: Double? {
         return Double(self)

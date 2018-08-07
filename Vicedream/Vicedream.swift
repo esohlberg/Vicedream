@@ -20,3 +20,5 @@ struct Vicedream {
         self.hourly = hourly
     }
 }
+
+
