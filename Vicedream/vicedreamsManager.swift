@@ -10,6 +10,7 @@ import Foundation
 
 class vicedreamsManager {
     private lazy var vicedreams: [Vicedream] = self.loadVicedreams()
+    var vicenotdream : Bool
     var vicedreamsCount: Int {return vicedreams.count}
     func getVicedream(at index: Int) -> Vicedream {
         return vicedreams[index]
@@ -40,14 +41,14 @@ class vicedreamsManager {
         do {
             let encoder = PropertyListEncoder()
             let data = try encoder.encode(vicedreams)
-            let success = NSKeyedArchiver.archiveRootObject(data, toFile: viceFile.path)
+            let success = NSKeyedArchiver.archiveRootObject(data, toFile: (vicenotdream ? viceFile.path : dreamFile.path))
             print(success ? "Successful save" : "Save Failed")
         } catch {
             print("Save Failed!")
         }
     }
     func retrieveVicedream() -> [Vicedream]? {
-        guard let data = NSKeyedUnarchiver.unarchiveObject(withFile: viceFile.path)
+        guard let data = NSKeyedUnarchiver.unarchiveObject(withFile: (vicenotdream ? viceFile.path : dreamFile.path))
             as? Data else { return nil }
         do {
             let decoder = PropertyListDecoder()
@@ -57,5 +58,8 @@ class vicedreamsManager {
             print("Retrieve Failed")
             return nil
         }
+    }
+    init(vicenotdream: Bool) {
+        self.vicenotdream = vicenotdream
     }
 }

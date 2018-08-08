@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42179F10211A66DE00B62460 /* EarnDreamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42179F0F211A66DE00B62460 /* EarnDreamTableViewController.swift */; };
+		42179F13211A671900B62460 /* FinalEarnDreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42179F12211A671900B62460 /* FinalEarnDreamViewController.swift */; };
+		42179F15211A6D1A00B62460 /* DreamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42179F14211A6D1A00B62460 /* DreamTableViewController.swift */; };
+		42179F17211A6D3D00B62460 /* AddDreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42179F16211A6D3D00B62460 /* AddDreamViewController.swift */; };
 		4279B45B20FFB6D800929889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279B45A20FFB6D800929889 /* AppDelegate.swift */; };
 		4279B46020FFB6D800929889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4279B45E20FFB6D800929889 /* Main.storyboard */; };
 		4279B46220FFB6DA00929889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4279B46120FFB6DA00929889 /* Assets.xcassets */; };
@@ -45,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42179F0F211A66DE00B62460 /* EarnDreamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarnDreamTableViewController.swift; sourceTree = "<group>"; };
+		42179F12211A671900B62460 /* FinalEarnDreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalEarnDreamViewController.swift; sourceTree = "<group>"; };
+		42179F14211A6D1A00B62460 /* DreamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTableViewController.swift; sourceTree = "<group>"; };
+		42179F16211A6D3D00B62460 /* AddDreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDreamViewController.swift; sourceTree = "<group>"; };
 		4279B45720FFB6D800929889 /* Vicedream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vicedream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4279B45A20FFB6D800929889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4279B45F20FFB6D800929889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,6 +104,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42179F11211A66F400B62460 /* EarnDream */ = {
+			isa = PBXGroup;
+			children = (
+				42179F0F211A66DE00B62460 /* EarnDreamTableViewController.swift */,
+				42179F12211A671900B62460 /* FinalEarnDreamViewController.swift */,
+			);
+			path = EarnDream;
+			sourceTree = "<group>";
+		};
+		42179F18211A6D4500B62460 /* DreamListMaintenance */ = {
+			isa = PBXGroup;
+			children = (
+				42179F14211A6D1A00B62460 /* DreamTableViewController.swift */,
+				42179F16211A6D3D00B62460 /* AddDreamViewController.swift */,
+			);
+			path = DreamListMaintenance;
+			sourceTree = "<group>";
+		};
 		4279B44E20FFB6D800929889 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +152,8 @@
 				427DABE921027289005384E5 /* MainPageViewController.swift */,
 				4279B48C21001A0F00929889 /* vicedreamsManager.swift */,
 				427DABEB21028ABA005384E5 /* HistoryManager.swift */,
+				42179F18211A6D4500B62460 /* DreamListMaintenance */,
+				42179F11211A66F400B62460 /* EarnDream */,
 				42DBAC672103962E0046C3F8 /* SpendVice */,
 				42DBAC662103960D0046C3F8 /* ViceListMaintenance */,
 				4279B46120FFB6DA00929889 /* Assets.xcassets */,
@@ -309,13 +337,17 @@
 			files = (
 				427DABEA21027289005384E5 /* MainPageViewController.swift in Sources */,
 				4279B48B20FFEEC600929889 /* ViceTableViewController.swift in Sources */,
+				42179F17211A6D3D00B62460 /* AddDreamViewController.swift in Sources */,
 				4279B48D21001A0F00929889 /* vicedreamsManager.swift in Sources */,
 				42DBAC6B21039B140046C3F8 /* FinalSpendViceViewController.swift in Sources */,
 				42DBAC65210392420046C3F8 /* GlobalVariables.swift in Sources */,
+				42179F15211A6D1A00B62460 /* DreamTableViewController.swift in Sources */,
 				427DABE421026AFC005384E5 /* History.swift in Sources */,
 				4279B45B20FFB6D800929889 /* AppDelegate.swift in Sources */,
+				42179F10211A66DE00B62460 /* EarnDreamTableViewController.swift in Sources */,
 				427DABEC21028ABA005384E5 /* HistoryManager.swift in Sources */,
 				4279B48920FFECC900929889 /* Vicedream.swift in Sources */,
+				42179F13211A671900B62460 /* FinalEarnDreamViewController.swift in Sources */,
 				4279B49121002A6B00929889 /* AddViceViewController.swift in Sources */,
 				42DBAC69210396510046C3F8 /* SpendViceTableViewController.swift in Sources */,
 			);

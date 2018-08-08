@@ -24,6 +24,7 @@ let appSupportDirectory: URL = {
 
 let historyFile = appSupportDirectory.appendingPathComponent("Histories")
 let viceFile = appSupportDirectory.appendingPathComponent("Vices")
+let dreamFile = appSupportDirectory.appendingPathComponent("Dreams")
 
 extension String {
     var doubleValue: Double? {
@@ -31,6 +32,7 @@ extension String {
     }
 }
 
-var viceManager = vicedreamsManager()
+var viceManager = vicedreamsManager(vicenotdream: true)
+var dreamManager = vicedreamsManager(vicenotdream: false)
 var historyManager = HistoryManager()
 var pointBalance:Double = 0
