@@ -9,6 +9,11 @@
 import Foundation
 import UIKit
 
+struct Balance : Codable {
+    var balance : Double
+}
+
+
 struct History: Codable {
     var vicedreamname : String
     var time: String

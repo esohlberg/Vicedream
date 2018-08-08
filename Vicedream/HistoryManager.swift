@@ -13,6 +13,32 @@ import Foundation
 class HistoryManager {
     private lazy var histories: [History] = self.loadHistory()
     var historiesCount: Int {return histories.count}
+    lazy var balance : Balance = self.loadBalance()
+    func loadBalance() -> Balance {
+        return retrieveBalance() ?? Balance(balance : 0)
+    }
+    func retrieveBalance() -> Balance? {
+        guard let data = NSKeyedUnarchiver.unarchiveObject(withFile: balanceFile.path)
+            as? Data else { return nil }
+        do {
+            let decoder = PropertyListDecoder()
+            let smoop = try decoder.decode(Balance.self, from: data)
+            return smoop
+        } catch {
+            print("Retrieve Failed")
+            return nil
+        }
+    }
+    func storeBalance() {
+        do {
+            let encoder = PropertyListEncoder()
+            let data = try encoder.encode(balance)
+            let success = NSKeyedArchiver.archiveRootObject(data, toFile: balanceFile.path)
+            print(success ? "Successful save" : "Save Failed")
+        } catch {
+            print("Save Failed!")
+        }
+    }
     func getHistory(at index: Int) -> History {
         return histories[index]
     }

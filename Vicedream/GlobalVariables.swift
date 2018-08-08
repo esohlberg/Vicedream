@@ -25,6 +25,7 @@ let appSupportDirectory: URL = {
 let historyFile = appSupportDirectory.appendingPathComponent("Histories")
 let viceFile = appSupportDirectory.appendingPathComponent("Vices")
 let dreamFile = appSupportDirectory.appendingPathComponent("Dreams")
+let balanceFile = appSupportDirectory.appendingPathComponent("Balance")
 
 extension String {
     var doubleValue: Double? {

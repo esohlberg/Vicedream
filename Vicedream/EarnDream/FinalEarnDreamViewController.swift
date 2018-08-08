@@ -160,12 +160,13 @@ class FinalEarnDreamViewController: UIViewController {
         else {
             dreamy = dream!
         }
-        let oldPointBalance = pointBalance
+        let oldPointBalance = historyManager.balance.balance
         (dreamy.hourly == false) ?
-            (pointBalance += dreamy.rate) :
-            (pointBalance += dreamy.rate * Double(hoursText.text!)!)
-        let newHistory = History(vicedream: dreamy, vicenotdream: true, points: (pointBalance - oldPointBalance))
+            (historyManager.balance.balance += dreamy.rate) :
+            (historyManager.balance.balance += dreamy.rate * Double(hoursText.text!)!)
+        let newHistory = History(vicedream: dreamy, vicenotdream: true, points: (historyManager.balance.balance - oldPointBalance))
         historyManager.addHistory(newHistory)
+        historyManager.storeBalance()
         dismissOutX()
     }
     
