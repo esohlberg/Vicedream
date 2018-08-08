@@ -17,6 +17,9 @@ extension DreamTableViewController: AddDreamViewControllerDelegate {
         }
         tableView.reloadData()
     }
+    func storVicedream() {
+        dreamManager.storeVicedream()
+    }
 }
 
 class DreamTableViewController: UITableViewController {

@@ -11,6 +11,7 @@ import UIKit
 
 protocol AddViceViewControllerDelegate {
     func saveVicedream(_ vicedream: Vicedream)
+    func storVicedream()
 }
 
 class AddViceViewController: UIViewController {
@@ -96,6 +97,7 @@ class AddViceViewController: UIViewController {
             hourly: (hourlyInstant.selectedSegmentIndex == 0 ? true : false)
         )
         delegate?.saveVicedream(newvice)
+        delegate?.storVicedream()
         dismissOut()
     }
         

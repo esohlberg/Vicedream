@@ -17,6 +17,9 @@ extension ViceTableViewController: AddViceViewControllerDelegate {
         }
         tableView.reloadData()
     }
+    func storVicedream() {
+        viceManager.storeVicedream()
+    }
 }
 
 class ViceTableViewController: UITableViewController {
