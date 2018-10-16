@@ -35,7 +35,9 @@ class MainPageViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        balanceField.text = "\(historyManager.balance.balance)"
+        let x = (historyManager.balance.balance)
+        let y = Double(round(1000*x)/1000)
+        balanceField.text = String(y)
         historyManager.storeBalance()
         tableView.reloadData()
     }

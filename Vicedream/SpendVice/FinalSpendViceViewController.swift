@@ -169,7 +169,7 @@ class FinalSpendViceViewController: UIViewController {
         let oldPointBalance = historyManager.balance.balance
         (vicey.hourly == false) ?
             (historyManager.balance.balance += vicey.rate) :
-            (historyManager.balance.balance += vicey.rate * Double(hoursText.text!)!)
+            (historyManager.balance.balance += (vicey.rate * Double(hoursText.text!)!))
         let newHistory = History(vicedream: vicey, vicenotdream: true, points: (historyManager.balance.balance - oldPointBalance))
         historyManager.addHistory(newHistory)
         historyManager.storeBalance()
